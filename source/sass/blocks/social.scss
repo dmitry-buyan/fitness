@@ -1,0 +1,30 @@
+.social {
+  padding: 0 0 42px 0;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style: none;
+  text-align: right;
+}
+
+.social__item {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-default-white;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

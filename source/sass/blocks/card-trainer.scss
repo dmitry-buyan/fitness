@@ -1,0 +1,105 @@
+.card-trainer {
+  position: relative;
+
+  h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 23px;
+    width: 100%;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: $color-default-white;
+    transform: translate(-50%, 0);
+  }
+
+  p {
+    text-align: center;
+    color: $color-spindle;
+
+    &:not(:last-child) {
+      margin: -4px 0 33px 0;
+    }
+  }
+
+  &:hover {
+    .card-trainer__info {
+      opacity: 1;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+
+.card-trainer__media {
+  img {
+    width: 260px;
+    height: 294px;
+    object-fit: cover;
+
+    @include vp-1199 {
+      width: 268px;
+    }
+
+    @include vp-767 {
+      width: 226px;
+      height: 274px;
+    }
+  }
+}
+
+.card-trainer__info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 52px 30px 30px;
+  color: $color-default-white;
+  background-color: rgba(16, 38, 84, 0.89);
+  opacity: 0;
+  transition: opacity $trans-600;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include vp-767 {
+    padding: 40px 34px 20px 34px;
+  }
+
+  h4 {
+    margin: 0 0 0 0;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.card-trainer__inner {
+  position: relative;
+  z-index: 100;
+}
+
+.card-trainer__list {
+  margin: 0 0 0 0;
+  padding: 0 0 0 38px;
+
+  @include vp-767 {
+    padding: 0 0 0 12px;
+  }
+}
+
+.card-trainer__item {
+  padding: 0 0 0 3px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &:not(:last-child) {
+    margin: 0 0 13px 0;
+  }
+}

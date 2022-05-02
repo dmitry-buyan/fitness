@@ -1,2 +1,2 @@
-// Swiper 7.4.1
-// import './vendor/swiper';
+// Swiper 8.1.4
+import './vendor/swiper.js';

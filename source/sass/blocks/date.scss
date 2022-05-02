@@ -1,0 +1,72 @@
+.date__row {
+  &:not(:last-child) {
+    margin: 0 0 19px 0;
+
+    @include vp-1199 {
+      margin: 0 0 4px 0;
+    }
+  }
+}
+
+.date__header {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    margin: 0 0 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.date__body {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 7px 0 0 0;
+  font-size: 14px;
+  border-top: 1px solid $color-default-white;
+
+  @include vp-1199 {
+    padding: 5px 0 0 0;
+    font-size: 10px;
+    align-items: center;
+  }
+
+  span {
+    line-height: 1em;
+  }
+
+  [data-day],
+  [data-time] {
+    grid-row: span 2;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 0.8em;
+
+    @include vp-1199 {
+      font-size: 24px;
+    }
+  }
+
+  [data-day] {
+    margin: 0 7px 0 0;
+
+    @include vp-1199 {
+      margin: 0 4px 0 0;
+    }
+  }
+
+  [data-month],
+  [data-year] {
+    grid-column: 2 / -1;
+  }
+
+  [data-month] {
+    margin: 0 0 5px 0;
+
+    @include vp-1199 {
+      margin: 0 0 2px 0;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.feedback {
+  h2 {
+    margin: 0 0 50px 0;
+    text-align: center;
+
+    @include vp-1199 {
+      margin: 0 0 40px 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 42px 0;
+    }
+  }
+}
+
+.feedback__container {
+  display: block;
+}
+
+.feedback__content {
+  position: relative;
+  width: 674px;
+  margin: 0 auto;
+  padding: 0 57px;
+
+  @include vp-1199 {
+    width: 678px;
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    padding: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $color-dark-grey;
+
+    &::after {
+      font-size: 33px;
+
+      @include vp-767 {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+
+    @include vp-1199 {
+      left: -6px;
+    }
+
+    @include vp-767 {
+      left: -9px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+
+    @include vp-1199 {
+      right: -6px;
+    }
+
+    @include vp-767 {
+      right: -9px;
+    }
+  }
+}
+
+.feedback__swiper {
+  width: 560px;
+
+  @include vp-1199 {
+    width: 566px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+}
+
+.feedback__item {
+  min-height: 242px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 28px;
+  margin: 0 auto;
+  padding: 62px 62px 57px;
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+
+  @include vp-1199 {
+    padding: 62px 65px 57px;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding: 40px 25px 35px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+
+    @include vp-767 {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    line-height: 15px;
+
+    @include vp-767 {
+      margin: 8px 0 24px 0;
+      line-height: 26px;
+    }
+  }
+
+  p {
+    margin: 0 0 0 0;
+    line-height: 22px;
+
+    @include vp-767 {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.feedback__img-container {
+  grid-row: 1 / 3;
+
+  @include vp-767 {
+    width: 68px;
+    grid-row: unset;
+    margin: 0 15px 10px 15px;
+    float: left;
+  }
+}
