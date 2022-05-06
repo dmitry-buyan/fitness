@@ -10503,8 +10503,8 @@ new Swiper('.trainers__swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.trainers__swiper-button-next',
+    prevEl: '.trainers__swiper-button-prev',
   },
 
   touchRatio: 1,
@@ -10525,11 +10525,12 @@ new Swiper('.trainers__swiper', {
 });
 
 new Swiper('.feedback__swiper', {
+  loop: true,
   slidesPerView: 1,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.feedback__swiper-button-next',
+    prevEl: '.feedback__swiper-button-prev',
   },
 
   touchRatio: 1,

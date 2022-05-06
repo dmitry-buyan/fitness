@@ -136,39 +136,11 @@
   display: flex;
 }
 
-.info__player.is-active .info__button {
-  opacity: 0;
-  height: 0;
-  transition-delay: 0s, 0.8s;
-}
-
-.info__frame {
+.info__link {
+  position: relative;
   width: 364px;
   height: 228px;
-  background-color: transparent;
-
-  @include vp-1199 {
-    width: 266px;
-    height: 167px;
-  }
-
-  @include vp-767 {
-    width: 320px;
-  }
-}
-
-.info__button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: url("../img/content/poster-desktop@1x.webp") no-repeat center / 100%;
-  border: none;
-  overflow: hidden;
-  opacity: 1;
-  transition: opacity 0.8s, height 0s;
-  transition-delay: 0s, 0s;
 
   @include vp-1280 {
     @include retina {
@@ -177,6 +149,8 @@
   }
 
   @include vp-1199 {
+    width: 266px;
+    height: 167px;
     background-image: url("../img/content/poster-tablet@1x.webp");
 
     @include retina {
@@ -185,6 +159,7 @@
   }
 
   @include vp-767 {
+    width: 320px;
     background-image: url("../img/content/poster-mobile@1x.webp");
 
     @include retina {
@@ -211,10 +186,8 @@
   }
 
   &:hover {
-    cursor: pointer;
-
     &::before {
-      opacity: 0.9;
+      opacity: 0.7;
     }
   }
 }

@@ -19,12 +19,15 @@
 
 .trainers__content {
   position: relative;
+  margin: 0 auto;
 
   @include vp-1199 {
+    width: 678px;
     padding: 0 56px;
   }
 
   @include vp-767 {
+    width: 290px;
     padding: 0 32px;
   }
 }
@@ -68,8 +71,6 @@
 }
 
 .trainers__content .swiper-slide {
-  flex: 0 0 260px;
-
   @include vp-1199 {
     flex-basis: 268px;
   }
