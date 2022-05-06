@@ -421,7 +421,7 @@ template {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Bebas Neue Bold"), url("./fonts/BebasNeueBold.woff2") format("woff2"), url("./fonts/BebasNeueBold.woff") format("woff");
+  src: local("Bebas Neue Bold"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
 }
 
 *,
